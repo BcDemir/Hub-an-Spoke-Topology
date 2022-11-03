@@ -3,53 +3,29 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "eastus"
+            "value": "canadacentral"
         },
         "extendedLocation": {
             "value": {}
         },
         "virtualNetworkName": {
-            "value": "az104-06-vnet3"
+            "value": "az104-06-vnet1"
         },
         "tagsByResource": {
             "value": {
-                "Microsoft.Network/virtualNetworks": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/ddosProtectionPlans": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/publicIPAddresses": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/azureFirewalls": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/bastionHosts": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/natGateways": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/publicIPPrefixes": {
-                    "owner": "burak",
-                    "type": "vm"
-                },
-                "Microsoft.Network/networkSecurityGroups": {
-                    "owner": "burak",
-                    "type": "vm"
-                }
+                "Microsoft.Network/virtualNetworks": {},
+                "Microsoft.Network/ddosProtectionPlans": {},
+                "Microsoft.Network/publicIPAddresses": {},
+                "Microsoft.Network/azureFirewalls": {},
+                "Microsoft.Network/bastionHosts": {},
+                "Microsoft.Network/natGateways": {},
+                "Microsoft.Network/publicIPPrefixes": {},
+                "Microsoft.Network/networkSecurityGroups": {}
             }
         },
         "addressPrefixes": {
             "value": [
-                "10.63.0.0/22"
+                "10.60.0.0/22"
             ]
         },
         "addressSpaceStartingAddressChanged": {
@@ -67,7 +43,21 @@
         "subnetsInfo": {
             "value": [
                 {
-                    "cidr": "10.63.0.0/24",
+                    "cidr": "10.60.0.0/24",
+                    "name": "Default",
+                    "natGw": "none",
+                    "nsg": "new",
+                    "udr": "none"
+                },
+                {
+                    "cidr": "10.60.1.0/24",
+                    "name": "Default",
+                    "natGw": "none",
+                    "nsg": "new",
+                    "udr": "none"
+                },
+                {
+                    "cidr": "10.60.2.224/27",
                     "name": "Default",
                     "natGw": "none",
                     "nsg": "new",
@@ -76,7 +66,7 @@
             ]
         },
         "subnetCount": {
-            "value": 1
+            "value": 3
         },
         "natGatewaysWithNewPublicIpAddress": {
             "value": []
@@ -90,18 +80,42 @@
         "networkSecurityGroupsNew": {
             "value": [
                 {
-                    "name": "nsg_subnet0_vnet3"
+                    "name": "nsg_subnet0_vnet1"
+                },
+                {
+                    "name": "nsg_subnet1_vnet1"
+                },
+                {
+                    "name": "nsg_subnet_appgw_vnet1"
                 }
             ]
         },
         "subnets": {
             "value": [
                 {
-                    "name": "Subnet0_vnet3",
+                    "name": "Subnet0_vnet1",
                     "properties": {
-                        "addressPrefix": "10.63.0.0/24",
+                        "addressPrefix": "10.60.0.0/24",
                         "networkSecurityGroup": {
-                            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet3"
+                            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet1"
+                        }
+                    }
+                },
+                {
+                    "name": "Subnet1_vnet1",
+                    "properties": {
+                        "addressPrefix": "10.60.1.0/24",
+                        "networkSecurityGroup": {
+                            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet1_vnet1"
+                        }
+                    }
+                },
+                {
+                    "name": "Subnet-appgw",
+                    "properties": {
+                        "addressPrefix": "10.60.2.224/27",
+                        "networkSecurityGroup": {
+                            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet_appgw_vnet1"
                         }
                     }
                 }

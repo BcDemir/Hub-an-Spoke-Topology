@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "canadacentral"
+        },
+        "networkInterfaceName": {
+            "value": "az104-06-vm0877"
+        },
+        "subnetName": {
+            "value": "Subnet0_vnet1"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet1"
+        },
+        "publicIpAddressName": {
+            "value": "az104-06-vm0-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "pipDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineName": {
+            "value": "az104-06-vm0"
+        },
+        "virtualMachineComputerName": {
+            "value": "az104-06-vm0"
+        },
+        "virtualMachineRG": {
+            "value": "az104-06-rg1"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "nicDeleteOption": {
+            "value": "Delete"
+        },
+        "adminUsername": {
+            "value": "az104-06-vm0-user"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "13:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "UTC"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "burak.demir@deop.ca"
+        }
+    }
+}
