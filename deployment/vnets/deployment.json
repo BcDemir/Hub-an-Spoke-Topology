@@ -1,0 +1,279 @@
+{
+  "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Resources/deployments/az104-06-vnet2",
+  "name": "az104-06-vnet2",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet2",
+    "marketplaceItemId": "Microsoft.VirtualNetwork"
+  },
+  "properties": {
+    "templateHash": "13217061106115437135",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "extendedLocation": {
+        "type": "Object",
+        "value": {}
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "az104-06-vnet2"
+      },
+      "tagsByResource": {
+        "type": "Object",
+        "value": {
+          "Microsoft.Network/virtualNetworks": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/ddosProtectionPlans": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/publicIPAddresses": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/azureFirewalls": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/bastionHosts": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/natGateways": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/publicIPPrefixes": {
+            "owner": "burak",
+            "type": "vm"
+          },
+          "Microsoft.Network/networkSecurityGroups": {
+            "owner": "burak",
+            "type": "vm"
+          }
+        }
+      },
+      "addressPrefixes": {
+        "type": "Array",
+        "value": [
+          "10.62.0.0/22"
+        ]
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "Subnet0-vnet2",
+            "properties": {
+              "addressPrefix": "10.62.0.0/24",
+              "networkSecurityGroup": {
+                "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet2"
+              }
+            }
+          }
+        ]
+      },
+      "ddosProtectionPlanEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "ddosProtectionPlanIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "ddosProtectionPlanName": {
+        "type": "String",
+        "value": "az104-06-vnet2-DDoS"
+      },
+      "ddosProtectionPlanId": {
+        "type": "String",
+        "value": ""
+      },
+      "firewallEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallName": {
+        "type": "String",
+        "value": "az104-06-vnet2-Firewall"
+      },
+      "firewallPublicIpAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPublicIpAddressName": {
+        "type": "String",
+        "value": "az104-06-vnet2-Firewall-PublicIP"
+      },
+      "firewallSkuTier": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "firewallPolicyIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPolicyName": {
+        "type": "String",
+        "value": ""
+      },
+      "bastionEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionName": {
+        "type": "String",
+        "value": "az104-06-vnet2-Bastion"
+      },
+      "bastionPublicIpAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionPublicIpAddressName": {
+        "type": "String",
+        "value": "az104-06-vnet2-Bastion-PublicIP"
+      },
+      "natGatewaysWithNewPublicIpAddress": {
+        "type": "Array",
+        "value": []
+      },
+      "natGatewaysWithoutNewPublicIpAddress": {
+        "type": "Array",
+        "value": []
+      },
+      "natGatewayPublicIpAddressesNewNames": {
+        "type": "Array",
+        "value": []
+      },
+      "networkSecurityGroupsNew": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "nsg_subnet0_vnet2"
+          }
+        ]
+      },
+      "ipv6Enabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "subnetCount": {
+        "type": "Int",
+        "value": 1
+      },
+      "addressSpaceStartingAddressChanged": {
+        "type": "Bool",
+        "value": true
+      },
+      "addressSpaceAddressSizeChanged": {
+        "type": "Bool",
+        "value": true
+      },
+      "defaultSubnetChanged": {
+        "type": "Bool",
+        "value": true
+      },
+      "subnetsInfo": {
+        "type": "Array",
+        "value": [
+          {
+            "cidr": "10.62.0.0/24",
+            "name": "Default",
+            "natGw": "none",
+            "nsg": "new",
+            "udr": "none"
+          }
+        ]
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2022-11-03T00:20:57.3420695Z",
+    "duration": "PT8.668056S",
+    "correlationId": "6d18a08a-3358-4390-b20b-56ecf785a8c6",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet2",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "nsg_subnet0_vnet2"
+          }
+        ],
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet2",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "az104-06-vnet2"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet2",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "az104-06-vnet2"
+          },
+          {
+            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/publicIpAddresses/az104-06-vnet2-Firewall-PublicIP",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "az104-06-vnet2-Firewall-PublicIP"
+          }
+        ],
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/azureFirewalls/az104-06-vnet2-Firewall",
+        "resourceType": "Microsoft.Network/azureFirewalls",
+        "resourceName": "az104-06-vnet2-Firewall"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet2",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "az104-06-vnet2"
+          },
+          {
+            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/publicIpAddresses/az104-06-vnet2-Bastion-PublicIP",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "az104-06-vnet2-Bastion-PublicIP"
+          }
+        ],
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/bastionHosts/az104-06-vnet2-Bastion",
+        "resourceType": "Microsoft.Network/bastionHosts",
+        "resourceName": "az104-06-vnet2-Bastion"
+      }
+    ],
+    "outputResources": [
+      {
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet2"
+      },
+      {
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet2"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

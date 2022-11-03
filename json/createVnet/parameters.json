@@ -1,0 +1,120 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "extendedLocation": {
+            "value": {}
+        },
+        "virtualNetworkName": {
+            "value": "az104-06-vnet3"
+        },
+        "tagsByResource": {
+            "value": {
+                "Microsoft.Network/virtualNetworks": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/ddosProtectionPlans": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/publicIPAddresses": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/azureFirewalls": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/bastionHosts": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/natGateways": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/publicIPPrefixes": {
+                    "owner": "burak",
+                    "type": "vm"
+                },
+                "Microsoft.Network/networkSecurityGroups": {
+                    "owner": "burak",
+                    "type": "vm"
+                }
+            }
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.63.0.0/22"
+            ]
+        },
+        "addressSpaceStartingAddressChanged": {
+            "value": true
+        },
+        "addressSpaceAddressSizeChanged": {
+            "value": true
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "defaultSubnetChanged": {
+            "value": true
+        },
+        "subnetsInfo": {
+            "value": [
+                {
+                    "cidr": "10.63.0.0/24",
+                    "name": "Default",
+                    "natGw": "none",
+                    "nsg": "new",
+                    "udr": "none"
+                }
+            ]
+        },
+        "subnetCount": {
+            "value": 1
+        },
+        "natGatewaysWithNewPublicIpAddress": {
+            "value": []
+        },
+        "natGatewaysWithoutNewPublicIpAddress": {
+            "value": []
+        },
+        "natGatewayPublicIpAddressesNewNames": {
+            "value": []
+        },
+        "networkSecurityGroupsNew": {
+            "value": [
+                {
+                    "name": "nsg_subnet0_vnet3"
+                }
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "Subnet0_vnet3",
+                    "properties": {
+                        "addressPrefix": "10.63.0.0/24",
+                        "networkSecurityGroup": {
+                            "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourcegroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet3"
+                        }
+                    }
+                }
+            ]
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "firewallEnabled": {
+            "value": false
+        },
+        "bastionEnabled": {
+            "value": false
+        }
+    }
+}

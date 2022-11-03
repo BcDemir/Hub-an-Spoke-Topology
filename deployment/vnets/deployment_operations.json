@@ -1,0 +1,48 @@
+[
+  {
+    "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Resources/deployments/az104-06-vnet2/operations/86F8C9E4B4341E27",
+    "operationId": "86F8C9E4B4341E27",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2022-11-03T00:20:57.0812136Z",
+      "duration": "PT7.9995928S",
+      "trackingId": "191f64c3-8006-4b32-961e-4f3a1f0ebc30",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/virtualNetworks/az104-06-vnet2",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "az104-06-vnet2"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Resources/deployments/az104-06-vnet2/operations/F09CFC3387B98EAC",
+    "operationId": "F09CFC3387B98EAC",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2022-11-03T00:20:52.7662274Z",
+      "duration": "PT3.6846066S",
+      "trackingId": "b763e979-bebb-4053-bfd0-a7d5fc7da04b",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Network/networkSecurityGroups/nsg_subnet0_vnet2",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "nsg_subnet0_vnet2"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/a544aca2-cb7a-48cd-8d62-79ebed635c89/resourceGroups/az104-06-rg1/providers/Microsoft.Resources/deployments/az104-06-vnet2/operations/08585341720369934945",
+    "operationId": "08585341720369934945",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2022-11-03T00:20:57.3131058Z",
+      "duration": "PT0.0783151S",
+      "trackingId": "bab8bb50-a180-4d43-ac61-42677f4e3124",
+      "statusCode": "OK"
+    }
+  }
+]
