@@ -14,3 +14,7 @@ Another 2 vms created in az104-06-rg4 and az104-06-rg5
 Application gateaway initiated and vm2 and vm3 are added to its backend pool
 
 Sc added to the project folder
+
+PS to self:
+-NSG can be modified to control internal network by adding outbound rules
+-Internal IPs can added to NSGs as a rule 
